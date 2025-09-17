@@ -18,7 +18,7 @@ def play_mad_libs():
         "{name} always dreamed of visiting {place}. But when they arrived, a {adjective} {animal} asked them to {verb} before they could eat {food} together."
     ]
 
-    print("\n🎉 Welcome to Mad Libs! 🎉")
+    print("\n Welcome to Mad Libs! ")
     print("Fill in the blanks to create a silly story.\n")
 
     # Ask for user input
@@ -35,7 +35,7 @@ def play_mad_libs():
         name=name, place=place, animal=animal, food=food, adjective=adjective, verb=verb
     )
 
-    print("\n📖 Here is your Mad Libs story:\n")
+    print("\n Here is your Mad Libs story:\n")
     print(story)
 
 # Main game loop
@@ -43,5 +43,5 @@ while True:
     play_mad_libs()
     again = input("\nWould you like to play again? (yes/no): ").strip().lower()
     if again != "yes":
-        print("\nThanks for playing! Goodbye! 👋")
+        print("\nThanks for playing! Goodbye! ")
         break
