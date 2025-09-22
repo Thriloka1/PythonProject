@@ -14,3 +14,68 @@
 - **Generators & Quests** – Procedurally generated quests and enemy spawns for replayability.  
 - **Logging & Analytics** – Track player actions, errors, and game events.  
 - **OOP & Advanced Python Concepts** – Demonstrates inheritance, decorators, lambdas, context managers, and modular design.
+
+
+
+                ┌─────────────────────┐
+                │  Start Game         │
+                │ (adventure_quest.py)│
+                └─────────┬───────────┘
+                          │
+              ┌───────────▼───────────┐
+              │ Check savegame.json   │
+              └───────┬───────────────┘
+        Save Found?    │
+       ┌───────────────┴───────────────┐
+       │ Yes                           │ No
+       ▼                               ▼
+Load Player, Map, Quests       Generate New Map & Player
+       │                               │
+       └───────────────┬───────────────┘
+                       ▼
+             ┌─────────────────────┐
+             │  Main Game Loop     │
+             │  (Explore / Act)    │
+             └─────────┬───────────┘
+                       │
+        ┌──────────────┼───────────────┐
+        ▼              ▼               ▼
+    Move Player    Enemy Encounter   Item Found
+        │              │               │
+        │          ┌───┴─────────┐     │
+        │          │ Battle Mode │     │
+        │          └───┬─────────┘     │
+        │              │               │
+        │        Win or Lose?          │
+        │      ┌───────┴────────┐      │
+        │      │ Win -> Gain XP │      │
+        │      │ Lose -> Respawn│      │
+        │      └────────────────┘      │
+        │              │               │
+        └───────┬──────┼──────┬────────┘
+                │      │      │
+                ▼      ▼      ▼
+         Quest Progress  Inventory Updated
+                │
+                ▼
+        ┌───────────────┐
+        │ Quest Complete│
+        │? Generate New │
+        └───────┬───────┘
+                │
+                ▼
+        ┌────────────────┐
+        │ Save & Continue│
+        └───────┬────────┘
+                │
+                ▼
+         Quit -> Savegame.json Updated
+
+
+The player starts a session by loading a save or starting fresh.
+
+The main loop allows movement, combat, item collection, and quest progression.
+
+Every action updates logs, inventory, and quest progress.
+
+The game continues until the player quits, at which point it saves progress.
