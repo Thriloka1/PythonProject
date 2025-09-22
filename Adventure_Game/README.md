@@ -70,12 +70,3 @@ Load Player, Map, Quests       Generate New Map & Player
                 │
                 ▼
          Quit -> Savegame.json Updated
-
-
-The player starts a session by loading a save or starting fresh.
-
-The main loop allows movement, combat, item collection, and quest progression.
-
-Every action updates logs, inventory, and quest progress.
-
-The game continues until the player quits, at which point it saves progress.
