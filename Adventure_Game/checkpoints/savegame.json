@@ -1,0 +1,126 @@
+{
+    "map": [
+        [
+            {
+                "type": "Enemy",
+                "visited": false
+            },
+            {
+                "type": "Empty",
+                "visited": false
+            },
+            {
+                "type": "Item",
+                "visited": false
+            },
+            {
+                "type": "Empty",
+                "visited": false
+            },
+            {
+                "type": "Empty",
+                "visited": false
+            }
+        ],
+        [
+            {
+                "type": "Empty",
+                "visited": true
+            },
+            {
+                "type": "Empty",
+                "visited": true
+            },
+            {
+                "type": "Empty",
+                "visited": true
+            },
+            {
+                "type": "Empty",
+                "visited": false
+            },
+            {
+                "type": "Empty",
+                "visited": false
+            }
+        ],
+        [
+            {
+                "type": "Empty",
+                "visited": false
+            },
+            {
+                "type": "Empty",
+                "visited": false
+            },
+            {
+                "type": "Item",
+                "visited": false
+            },
+            {
+                "type": "Trap",
+                "visited": false
+            },
+            {
+                "type": "Item",
+                "visited": false
+            }
+        ],
+        [
+            {
+                "type": "Item",
+                "visited": false
+            },
+            {
+                "type": "Empty",
+                "visited": false
+            },
+            {
+                "type": "Empty",
+                "visited": false
+            },
+            {
+                "type": "Enemy",
+                "visited": false
+            },
+            {
+                "type": "Empty",
+                "visited": false
+            }
+        ],
+        [
+            {
+                "type": "Item",
+                "visited": false
+            },
+            {
+                "type": "Item",
+                "visited": false
+            },
+            {
+                "type": "Trap",
+                "visited": false
+            },
+            {
+                "type": "Enemy",
+                "visited": false
+            },
+            {
+                "type": "Trap",
+                "visited": false
+            }
+        ]
+    ],
+    "player": {
+        "health": 100,
+        "inventory": {},
+        "level": 1,
+        "max_health": 100,
+        "name": "kim",
+        "position": [
+            1,
+            2
+        ],
+        "status": null
+    }
+}
