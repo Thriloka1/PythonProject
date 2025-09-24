@@ -24,6 +24,3 @@ Future Ideas 🌟
   Real-time maps for delivery
   AI-based route optimization
   Web front-end integration
-If you want, I can also create a super visual README with ASCII-style flow diagrams showing Admin → User → Delivery → Orders, keeping it minimal and engaging.
-
-Do you want me to do that?
